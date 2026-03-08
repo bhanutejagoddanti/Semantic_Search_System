@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  semantic-search-api:
+    build: .
+    container_name: trademark_semantic_api
+    ports:
+      - "8000:8000"
+    restart: always

@@ -51,6 +51,7 @@ class ClusterSemanticCatch:
         self.cluster_catch[cluster].append(entry)
         
     def catch_status(self):
+        print(self.cluster_catch)
         return { 
             "total_entries":len(self.cluster_catch),
             "hit_count":self.hit_count,
