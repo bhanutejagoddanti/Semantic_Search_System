@@ -23,7 +23,9 @@ cache=ClusterSemanticCatch()
 def home():
     return {"message": "API working"}
 
-
+@app.get("/healthz")
+def healthz():
+    return {"status": "ok"}
 
 
 @app.post("/query")
